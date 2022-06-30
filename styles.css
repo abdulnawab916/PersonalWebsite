@@ -1,9 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:ital@1&display=swap');
+
+
  .header {
   padding: 0;
   margin: 0;
-  background: #1f2937;
+  background: #3e4c60;
+  width: 100%;
+}
 
+
+.intro {
+  color: white;
+  flex-wrap: wrap;
+  font-size: 2em;
+  font-family: 'Finlandica', sans-serif;
+  font-family: 'Roboto Mono', monospace;
 }
 
 
@@ -11,8 +23,72 @@
 body {
   margin: 0;
   padding: 0;
-  background: lightblue;
+  background: #1f2937;
 }
+
+
+.MainSection {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.leftSide , .rightSide {
+  display: flex;
+  padding: 10px;
+  color: white;
+  background-color: #1f2937;
+  position: relative;
+  max-width: 100%;
+
+}
+
+
+.rightSide {
+  background-color: #1f2937;
+  flex: 1;
+  position: relative;
+  margin: auto;
+  padding: 25px;
+}
+
+.description {
+  color: white;
+  flex-wrap: wrap;
+  font-family: 'Francois One', sans-serif;
+  font-family: 'M PLUS 1 Code', sans-serif;
+  font-size: 2em;
+}
+
+
+.ppic {
+  display: flex;
+  flex-direction: column-reverse;
+  -ms-flex-align: baseline;
+  top: 10px;
+  height: 300px;
+  width: 300px;
+  margin: auto;
+  gap: 5px;
+}
+
+
+.pic {
+  position: relative;
+  top: -60px;
+  left: 25%;
+  display: flex;
+  flex: 1;
+}
+
+.HeyLookMe {
+  position: relative;
+  top: 10px;
+  left: 10%;
+  display: flex;
+  flex: 1;
+}
+
 
 div ul {
   margin: 0;
@@ -61,7 +137,12 @@ div li {
   font-family: 'Quicksand', sans-serif;
   text-transform: uppercase;
   font-style: italic;
+  position: sticky;
+  top: 0;
+  background-color: #1f2937;
+  border: 2px solid white;
 }
+
 
 .subsection1 {
   font-family: 'Francois One', sans-serif;
@@ -71,37 +152,15 @@ div li {
 
 .profileImage {
   display: flex;
-  position: relative;
   width: 325px;
   height: 325px;
-  padding: 20px;
-  left: 20%;
   top: 10px;
-  border-radius: 25px;
-  border: 25px whitesmoke;
 
-
-
-}
-
-.introTitle {
-  color: #1f2937;
-  position: relative;
-  left: 10%;
-  min-width: 25px;
-  top: 200px;
-  font-size: larger;
-  padding: 10px;
- /* make the text italic here */
-  max-width: 100px;
-  font-style: italic;
-  font-family: 'Francois One', sans-serif;
-  font-family: 'M PLUS 1 Code', sans-serif;
 }
 
 .intro {
   display: flex;
-  color:#1f2937;
+  color: white;
   position: relative;
   left: 1%;
   font-size: .75in;
@@ -121,5 +180,42 @@ div li {
 }
 
 ul li:hover {
-  background-color: white;
+  background-color: #384251;
+}
+
+.quote {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  
+  margin: auto;
+  flex-wrap: wrap;
+  background-color: #d4d3d3;
+  color: black;
+  font-size: 4em;
+  gap: 1em;
+  font-family: 'Francois One', sans-serif;
+  font-family: 'M PLUS 1 Code', sans-serif;
+  font-weight: 100px;
+  font-style: italic;
+  padding: 100px;
+
+}
+
+.quoteText {
+  text-align: center;
+}
+
+/* FOOTER SECTION */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  background-color: #1f2937;
+  color: white;
+  font-family: 'Francois One', sans-serif;
+  font-family: 'M PLUS 1 Code', sans-serif;
+  font-weight: 100px;
+  font-style: italic;
 }
