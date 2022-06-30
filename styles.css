@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+ .header {
+  padding: 0;
+  margin: 0;
+  background: #1f2937;
+
+}
+
+
+/*basically, when the margin is 0 for the body, gets rid of that space. */
+body {
+  margin: 0;
+  padding: 0;
+  background: lightblue;
+}
+
+div ul {
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+  color: white;
+}
+
+
+div li {
+  display: flex;
+  gap: 100px;
+  text-align: center;
+
+}
+
+.subsection1 {
+  display: flex;
+  padding: 30px;
+  max-width:  30%;
+  max-height: 50%;
+  
+  color: whitesmoke;
+  background: #1f2937;
+  width:700px;
+
+  /*added word-wrap to wrap words around div*/
+  word-wrap: break-word;
+  position: relative;
+
+  left: 54%;
+  top: -10px;
+  font-style: italic;
+  border-radius: 25px;
+
+}
+
+.specifics {
+  margin: 0;
+  justify-content: right;
+  list-style: none;
+  gap: 20px;
+  color: white;
+  display: flex;
+  flex: 1;
+  font-family: 'Quicksand', sans-serif;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.subsection1 {
+  font-family: 'Francois One', sans-serif;
+  font-family: 'M PLUS 1 Code', sans-serif;
+}
+
+
+.profileImage {
+  display: flex;
+  position: relative;
+  width: 325px;
+  height: 325px;
+  padding: 20px;
+  left: 20%;
+  top: 10px;
+  border-radius: 25px;
+  border: 25px whitesmoke;
+
+
+
+}
+
+.introTitle {
+  color: #1f2937;
+  position: relative;
+  left: 10%;
+  min-width: 25px;
+  top: 200px;
+  font-size: larger;
+  padding: 10px;
+ /* make the text italic here */
+  max-width: 100px;
+  font-style: italic;
+  font-family: 'Francois One', sans-serif;
+  font-family: 'M PLUS 1 Code', sans-serif;
+}
+
+.intro {
+  display: flex;
+  color:#1f2937;
+  position: relative;
+  left: 1%;
+  font-size: .75in;
+}
+
+.subOne {
+
+  display: flex;
+  position: relative;
+  bottom: 150px;
+}
+
+.subTwo {
+  display: flex;
+  position: relative;
+  bottom: 250px;
+}
+
+ul li:hover {
+  background-color: white;
+}
