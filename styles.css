@@ -1,7 +1,12 @@
+
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Finlandica:ital@1&display=swap');
 
-
+.MainSection {
+  display: flex;
+  flex-direction: column-reverse;
+  /* I fixed the direction, which fixed the spacing being messed up!*/
+}
  .header {
   padding: 0;
   margin: 0;
@@ -43,42 +48,53 @@ body {
 
 }
 
+.leftSide {
+  justify-content: center;
+  padding: 0;
+}
 
 .rightSide {
-  background-color: #1f2937;
-  flex: 1;
+  background-color: #37475c;   
+  padding: 30px;
+  width: 50%;
+  border-radius: 30px;
+  border: 5px darkgray;
+  display: flex;
   position: relative;
-  margin: auto;
-  padding: 25px;
+  left: 23%;
+  gap: 25px;
+  bottom: 50px;
 }
+
 
 .description {
   color: white;
   flex-wrap: wrap;
-  font-family: 'Francois One', sans-serif;
-  font-family: 'M PLUS 1 Code', sans-serif;
-  font-size: 2em;
+  font-size: 15px;
+  font-family: 'Finlandica', sans-serif;
+  font-family: 'Roboto Mono', monospace;
 }
 
 
 .ppic {
   display: flex;
   flex-direction: column-reverse;
-  -ms-flex-align: baseline;
-  top: 10px;
-  height: 300px;
-  width: 300px;
+  height: 100px;
+  width: 100px;
   margin: auto;
-  gap: 5px;
+  align-items: right;
 }
 
 
 .pic {
   position: relative;
-  top: -60px;
-  left: 25%;
-  display: flex;
+  background-color: #37475c;
   flex: 1;
+  position: relative;
+  padding: 30px;
+  left: 30%;
+  width: 40%;
+  border-radius: 30px;
 }
 
 .HeyLookMe {
@@ -105,26 +121,7 @@ div li {
 
 }
 
-.subsection1 {
-  display: flex;
-  padding: 30px;
-  max-width:  30%;
-  max-height: 50%;
-  
-  color: whitesmoke;
-  background: #1f2937;
-  width:700px;
 
-  /*added word-wrap to wrap words around div*/
-  word-wrap: break-word;
-  position: relative;
-
-  left: 54%;
-  top: -10px;
-  font-style: italic;
-  border-radius: 25px;
-
-}
 
 .specifics {
   margin: 0;
@@ -187,23 +184,23 @@ ul li:hover {
   display: flex;
   justify-content: center;
   justify-items: center;
-  
-  margin: auto;
   flex-wrap: wrap;
-  background-color: #d4d3d3;
-  color: black;
-  font-size: 4em;
+  height: 75px;
+  background-color: rgb(35, 35, 48);
+  color: white;
+  font-size: 1.5em;
   gap: 1em;
   font-family: 'Francois One', sans-serif;
   font-family: 'M PLUS 1 Code', sans-serif;
   font-weight: 100px;
   font-style: italic;
-  padding: 100px;
+  padding: 15px;
 
 }
 
 .quoteText {
   text-align: center;
+  color: white;
 }
 
 /* FOOTER SECTION */
@@ -218,4 +215,11 @@ ul li:hover {
   font-family: 'M PLUS 1 Code', sans-serif;
   font-weight: 100px;
   font-style: italic;
+}
+
+
+/*links for nav-bar */
+a {
+  color: white;
+  text-decoration: none;
 }
