@@ -2,6 +2,12 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Finlandica:ital@1&display=swap');
 
+* {
+  box-sizing: border-box;
+ 
+}
+
+
 .MainSection {
   display: flex;
   flex-direction: column-reverse;
@@ -12,6 +18,7 @@
   margin: 0;
   background: #3e4c60;
   width: 100%;
+  min-width: 400px;
 }
 
 
@@ -50,7 +57,7 @@ body {
 
 .leftSide {
   justify-content: center;
-  padding: 0;
+  padding: 15px;
 }
 
 .rightSide {
@@ -181,7 +188,9 @@ ul li:hover {
 }
 
 .quote {
+  min-width: 400px;
   display: flex;
+  flex: 1;
   justify-content: center;
   justify-items: center;
   flex-wrap: wrap;
@@ -194,7 +203,9 @@ ul li:hover {
   font-family: 'M PLUS 1 Code', sans-serif;
   font-weight: 100px;
   font-style: italic;
-  padding: 15px;
+  padding: 30px;
+  height: 180px;
+  
 
 }
 
@@ -202,6 +213,62 @@ ul li:hover {
   text-align: center;
   color: white;
 }
+
+/* Experience section */
+.experience {
+ background-color: #151c25;
+ text-align: center;
+ color: white;
+ height: 1.3in;
+ padding: 0px;
+ width: 100%;
+ min-width: 400px;
+ font-size: 4em;
+}
+
+
+.NASAExperience {
+  background-color: #37475c;   
+  padding: 15px;
+  width: 50%;
+  border-radius: 30px;
+  border: 5px darkgray;
+  max-height: 300px;
+  max-width: 400px;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  position: relative;
+  justify-items: center;
+  justify-content: center;
+  top: -3%;
+  left: 36%;
+  gap: 25px;
+  bottom: 50px;
+  border-color: white;
+  border-style: solid;
+  border-width: 5px;
+  
+}
+
+.NASAExperience:hover {
+  cursor: pointer;
+}
+
+/* NASA pic */
+
+.NASApic {
+  display: flex;
+  flex-direction: column-reverse;
+  height: 100px;
+  width: 100px;
+  margin: auto;
+  position: relative;
+  left: 40%;
+  bottom: 10%;
+  align-items: right;
+
+}
+
 
 /* FOOTER SECTION */
 
@@ -215,8 +282,17 @@ ul li:hover {
   font-family: 'M PLUS 1 Code', sans-serif;
   font-weight: 100px;
   font-style: italic;
+  position: relative;
+  top: 10px;
 }
-
+.experienceSection {
+  background-color: #0f151c;
+  height: 400px;
+  min-height: 600px;
+  min-width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+}
 
 /*links for nav-bar */
 a {
